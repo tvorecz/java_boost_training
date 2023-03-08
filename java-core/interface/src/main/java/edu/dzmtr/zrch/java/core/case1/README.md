@@ -14,8 +14,7 @@ public class B implements A{
 
 ### Explanation:
 
->Class will not be compiled because of two reason:
-> - Annotation @Override is not allowed to use with implementation of interface methods. **It should be removed**.
+>Class will not be compiled:
 > - We can not narrow the privacy of the implemented method in child objects. **Method should be made public**. 
 
 
@@ -23,6 +22,7 @@ public class B implements A{
 ```java
 public class B implements A{
 
+    @Override
     public void doSome() {
         
     }

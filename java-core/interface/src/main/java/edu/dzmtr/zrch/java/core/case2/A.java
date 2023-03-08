@@ -6,7 +6,6 @@ package edu.dzmtr.zrch.java.core.case2;
  * @author Dzmitry_Zorych
  */
 public interface A {
-    String value(String input1);
 
     default String value() {
         return "A: default String and " + value("1", "2", "3", "4");

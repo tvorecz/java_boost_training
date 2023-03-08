@@ -3,16 +3,13 @@ with the same names for default, the same names for static and the same names fo
 
 ### Explanation
 #### Default/Public methods
-> The proposed exercise is mostly related to resolving method conflicts in children that implement several interfaces with the same method names and signatures.
-> The issue is related to both public and default methods. To resolve it we should:
-> - override public/default method;
-> - use custom logic inside or just call a parent interface default implementation, using following syntax:
+> To call interface default methods inside implementation class, we should use following syntax:
 > ```java 
 >  InterfaceName.super.method()
 > ```
 
 #### Static methods
-> Public static methods of interfaces in case of coincidence of the method names and signatures can be accessed, as usual, via Type Name in both descendants and another classes inside inheritance hierarchy
+> Public static methods of interfaces can be accessed, as usual, via Type Name in both descendants and another classes outside inheritance hierarchy
 
 #### Private method
-> Private instance methods of interfaces in case of coincidence of the method names and signatures cannot be accessed in both descendants and another classes inside inheritance hierarchy. They can be used only inside related interface. For example, in default or other private instance methods.
+> Private instance methods of interfaces cannot be accessed in both descendants and another classes inside inheritance hierarchy. They can be used only inside related interface. For example, in default or other private instance methods.
