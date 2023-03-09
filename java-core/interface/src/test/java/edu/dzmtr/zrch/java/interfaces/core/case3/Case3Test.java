@@ -1,4 +1,4 @@
-package edu.dzmtr.zrch.java.core.case3;
+package edu.dzmtr.zrch.java.interfaces.core.case3;
 
 import static org.junit.Assert.assertEquals;
 

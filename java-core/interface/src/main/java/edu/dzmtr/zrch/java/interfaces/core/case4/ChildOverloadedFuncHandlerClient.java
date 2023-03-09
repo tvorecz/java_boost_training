@@ -5,7 +5,7 @@ package edu.dzmtr.zrch.java.interfaces.core.case4;
  */
 public class ChildOverloadedFuncHandlerClient {
 
-    Object handle(String s, ChildOverloadedFuncHandler handler) {
+    public Object handle(String s, ChildOverloadedFuncHandler handler) {
         return handler.handle(s);
     }
 }

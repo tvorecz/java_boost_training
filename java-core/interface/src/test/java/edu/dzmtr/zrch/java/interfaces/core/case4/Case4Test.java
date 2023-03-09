@@ -1,4 +1,4 @@
-package edu.dzmtr.zrch.java.core.case4;
+package edu.dzmtr.zrch.java.interfaces.core.case4;
 
 import org.junit.Assert;
 import org.junit.Test;
