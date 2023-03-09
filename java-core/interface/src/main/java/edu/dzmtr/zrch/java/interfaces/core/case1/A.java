@@ -1,4 +1,4 @@
-package edu.dzmtr.zrch.java.core.case1;
+package edu.dzmtr.zrch.java.interfaces.core.case1;
 
 /**
  *

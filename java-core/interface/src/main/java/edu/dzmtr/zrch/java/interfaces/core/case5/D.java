@@ -1,4 +1,4 @@
-package edu.dzmtr.zrch.java.core.case5;
+package edu.dzmtr.zrch.java.interfaces.core.case5;
 
 /**
  * TODO description

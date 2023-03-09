@@ -2,8 +2,9 @@ package edu.dzmtr.zrch.java.core.case3;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import edu.dzmtr.zrch.java.interfaces.core.case3.SimpleHandlerClient;
 
 /**
  * @author Dzmitry_Zorych

@@ -1,19 +1,20 @@
-package edu.dzmtr.zrch.java.core.case2;
+package edu.dzmtr.zrch.java.interfaces.core.case2;
 
 /**
- *
+ * TODO description
  *
  * @author Dzmitry_Zorych
  */
-public interface A {
+public interface B {
+    String value(String input1);
 
     default String value() {
-        return "A: default String and " + value("1", "2", "3", "4");
+        return "B: default String and " + value("1", "2", "3", "4");
         //instance private method available for default instance method, but not available inside initial interface and for its descendants
     }
 
     static String value(String input1, String input2) {
-        return "A: static String and " + value("1", "2", "3");
+        return "B: static String and " + value("1", "2", "3");
         //static private method available for public static method and instance method, but not available inside initial interface and for its descendants
     }
 

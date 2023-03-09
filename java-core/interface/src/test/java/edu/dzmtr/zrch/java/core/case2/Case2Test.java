@@ -4,6 +4,10 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import edu.dzmtr.zrch.java.interfaces.core.case2.A;
+import edu.dzmtr.zrch.java.interfaces.core.case2.B;
+import edu.dzmtr.zrch.java.interfaces.core.case2.C;
+
 /**
  * TODO description
  *
