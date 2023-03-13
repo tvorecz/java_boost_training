@@ -1,0 +1,10 @@
+package edu.dzmtr.zrch.java.interfaces.core.case6;
+
+/**
+ * TODO description
+ *
+ * @author Dzmitry_Zorych
+ */
+public interface Z<A, B> extends X<A>, Y<B> {
+//compilation error, both methods from X and Y has the same erasure
+}
