@@ -16,6 +16,9 @@
         <module>interface</module>
         <module>generics</module>
         <module>classloaders</module>
+        <module>collections</module>
+        <module>garbage-collection</module>
+        <module>exceptions</module>
     </modules>
 
 
