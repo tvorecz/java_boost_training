@@ -24,7 +24,7 @@ public class Case10 {
         //        i.set(0, new Object()); //new Object() - java: incompatible types: java.lang.Object cannot be converted to capture#1 of ?
         //        i.set(0, i.get(0));//i.get(0) - java: incompatible types: java.lang.Object cannot be converted to capture#1 of ?
         // the actual problem here that List<?> can contain any type of values.
-        // if we insert to the List<?> the reference of Object type it can lead to inconsistency because actual List<?> references may appear another type
+        // if we insert to the List<?> the reference of Object type it can lead to inconsistency because actual List<?> references may contain more specific type
     }
 
     public static void swapFirst(List<? extends Number> l1, List<? extends Number> l2) {
