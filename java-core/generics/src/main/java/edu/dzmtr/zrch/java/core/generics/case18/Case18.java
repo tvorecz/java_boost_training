@@ -33,7 +33,7 @@ public class Case18 {
         //found:    Collection
         copiedGenIntegers = (Collection<Integer>) getRaw(); //warning: [unchecked] unchecked cast
 
-        System.out.println(copiedGenIntegers);
+        genIntegers = (Collection<Integer>) copiedGenIntegers;//no warning, casting is redundant
 
         //Using generified code inside legacy code
         Collection rawIntegers = new ArrayList<>();
@@ -50,7 +50,7 @@ public class Case18 {
         //found: Collection
 
         rawCopiedIntegers = getGen(); //do not produce warnings
-        System.out.println(rawCopiedIntegers);
+
         rawCopiedIntegers = rawIntegers; //no warnings when raw type is assigned to raw type
     }
 
@@ -69,4 +69,9 @@ public class Case18 {
     public static Collection<Integer> getGen() {
         return new ArrayList<Integer>();
     }
+
+    public static <T> T badCast(T t, Object o) {
+        return (T) o; // warning: [unchecked] unchecked cast
+    }
+
 }
