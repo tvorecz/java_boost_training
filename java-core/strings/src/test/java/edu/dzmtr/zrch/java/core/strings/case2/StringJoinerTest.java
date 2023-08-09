@@ -56,14 +56,11 @@ public class StringJoinerTest {
 
     @Test
     public void shouldAddValuesAndDelimitersFromSecondJoinerToTheFirstOne() {
-        StringJoiner stringJoiner1 = new StringJoiner(",", "[", "]")
-            .add("v1_1")
-            .add("v1_2");
-        StringJoiner stringJoiner2 = new StringJoiner(";", "(", ")")
-            .add("v2_1")
-            .add("v2_2");
-        String actualResult = stringJoiner1.merge(stringJoiner2)
+        StringJoiner stringJoiner1 = new StringJoiner(",", "[", "]").add("v1_1").add("v1_2");
+        StringJoiner stringJoiner2 = new StringJoiner(";", "(", ")").add("v2_1").add("v2_2");
+        StringJoiner stringJoiner3 = new StringJoiner("|", "/", "/").add("v3_1").add("v3_2");
+        String actualResult = stringJoiner1.merge(stringJoiner2).merge(stringJoiner3)
             .toString(); //adds only values and delimiters from the second joiner to the caller joiner
-        assertEquals("[v1_1,v1_2,v2_1;v2_2]", actualResult);
+        assertEquals("[v1_1,v1_2,v2_1;v2_2,v3_1|v3_2]", actualResult);
     }
 }

@@ -21,6 +21,8 @@
         <module>exceptions</module>
         <module>varargs</module>
         <module>strings</module>
+        <module>annotations</module>
+        <module>serialization</module>
     </modules>
 
 

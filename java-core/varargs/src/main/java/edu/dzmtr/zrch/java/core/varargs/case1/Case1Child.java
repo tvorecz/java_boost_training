@@ -1,4 +1,4 @@
-package edu.dzmtr.zrch.java.interfaces.core.varargs.case1;
+package edu.dzmtr.zrch.java.core.varargs.case1;
 
 /**
  * TODO description
